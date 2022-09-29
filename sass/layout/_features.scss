@@ -1,0 +1,37 @@
+.features__item {
+    flex-basis: calc((100% - 90px)/4);
+}
+
+.features__tittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.features__subtittle {
+    line-height: 1.71;
+    color: var(--secondery-text-color);
+    margin-top: 10px;
+    text-align: left;
+}
+
+.feachers__icon {
+    height: 70px;
+    width: 70px;
+
+}
+
+.feachers__image {
+    @extend %align;
+    height: 120px;
+    background-color: var(--background-team-color);
+    border-radius: 4px;
+
+}
+
+.features__list {
+    display: flex;
+    gap: 30px;
+}
