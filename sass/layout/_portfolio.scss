@@ -1,3 +1,82 @@
+@media screen and (max-width: 767px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        row-gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    .portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .project-container {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .project-cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .project-cards__item {
+        flex-basis: calc((100% - 30px)/2);
+    }
+
+    .project-cards__link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .project-cards__border {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project-container {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .project-cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .project-cards__item {
+        flex-basis: calc((100% - 60px)/3);
+    }
+
+    .project-cards__link {
+        display: block;
+    }
+}
+
 .project-container__button {
     padding: 6px 22px;
     font-family: inherit;
@@ -17,18 +96,7 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-container {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 56px;
-}
 
-.project-cards {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
 
 .project-cards__title {
     margin-bottom: 4px;
@@ -45,10 +113,6 @@
     padding: 20px 24px;
 }
 
-.project-cards__item {
-    flex-basis: calc((100% - 60px)/3)
-}
-
 .project-cards__subtitle {
     line-height: 1.88;
     color: var(--secondery-text-color);
@@ -56,7 +120,6 @@
 }
 
 .project-cards__link {
-    display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -83,7 +146,7 @@
     font-size: 18px;
     line-height: 1.55;
     overflow: auto;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .project-cards__link:hover &,

@@ -1,6 +1,37 @@
-.clients__list {
-    @extend %align;
-    gap: 30px;
+@media screen and (max-width: 767px) {
+    .clients__list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    // .clients__items {
+    //     flex-basis: calc((100% - 30px)/2);
+    // }
+}
+
+@media screen and (min-width: 768px) {
+    .clients__list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    // .clients__items {
+    //     flex-basis: calc((100% - 60px)/3);
+    // }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
 }
 
 .clients__icon {
